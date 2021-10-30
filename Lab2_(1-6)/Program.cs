@@ -149,11 +149,13 @@ namespace Lab2__1_6_
                                     y3 = Math.Pow(y, 3);
                                     z3 = Math.Pow(z, 3);
                                     if (x3 + y3 + z3 == n)
-                                        Console.WriteLine($"{x}^3+{y}^3+{z}^3={n}");
+                                    
+                                Console.WriteLine($"{x}^3+{y}^3+{z}^3={n}");
 
                                 }
-                            }
-
+                            Console.WriteLine(i);
+                        }
+                     
                             break;
                         }
                     case 6:
