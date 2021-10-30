@@ -153,7 +153,7 @@ namespace Lab2__1_6_
                                 Console.WriteLine($"{x}^3+{y}^3+{z}^3={n}");
 
                                 }
-                            Console.WriteLine(i);
+                          
                         }
                      
                             break;
