@@ -126,7 +126,6 @@ namespace Lab2__1_6_
                             x = Math.Cos(x);
                             Console.WriteLine($"Количество слагаемых =  {i}");
                             Console.WriteLine("Значение cos(x) = " + c);
-                        Console.WriteLine($"Значение x = {x}") ;
                             Console.ReadKey();
                             break;
                         }
@@ -135,10 +134,11 @@ namespace Lab2__1_6_
                         Console.WriteLine("Задание №5");
                         Console.WriteLine("Введите число:");
                             int n = int.Parse(Console.ReadLine());
+                            int p = 0;
 
-                            for (int i = 10; i < 1000; i++)
+                        for (int i = 10; i < 1000; i++)
                             {
-
+                          
                                 double x3, y3, z3;
                                 int x = i % 10;
                                 int y = (i % 100) / 10;
@@ -148,14 +148,17 @@ namespace Lab2__1_6_
                                     x3 = Math.Pow(x, 3);
                                     y3 = Math.Pow(y, 3);
                                     z3 = Math.Pow(z, 3);
-                                    if (x3 + y3 + z3 == n)
-                                    
-                                Console.WriteLine($"{x}^3+{y}^3+{z}^3={n}");
-
+                                if (x3 + y3 + z3 == n)
+                                    p++;
+                                break;
+                                
                                 }
+                                
                           
-                        }
-                     
+                            }
+                     if (p==0)
+                        { Console.WriteLine("Решений нету"); }
+                     else { Console.WriteLine("Решение есть"); }
                             break;
                         }
                     case 6:
