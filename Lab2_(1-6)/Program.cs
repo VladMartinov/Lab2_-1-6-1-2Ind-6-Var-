@@ -88,7 +88,7 @@ namespace Lab2__1_6_
                             {
                                 n2 = n0 + n1;
                                 double n_2 = n2 / 1000;
-                                if (n_2 > 1 && n_2 < 10)
+                                if (n_2 >= 1 && n_2 < 10)
                                 {
                                     num++;
                                 }
